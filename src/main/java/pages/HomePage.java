@@ -16,7 +16,7 @@ public class HomePage extends PageBase{
 	
 	public void openregisterationPage()
 	{
-		clickButton(RegisterLink);
+		click_button(RegisterLink);
 	}
 
 }

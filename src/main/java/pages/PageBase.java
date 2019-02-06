@@ -18,15 +18,17 @@ public class PageBase {
 	}
 	
 	//Create elements Actions(Clicks, Send Keys, etc....)
-	protected static void clickButton(WebElement button)
-	
+	protected static void click_button(WebElement button)
 	{
 		button.click();
+		
 	}
 	
-	protected static void setText(WebElement textElement, String value)
+	protected static void Enter_Text(WebElement settxt, String Value)
 	{
-		textElement.sendKeys(value);
+		settxt.clear();
+		settxt.sendKeys(Value);
+		
 	}
 
 

@@ -1,6 +1,5 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -21,8 +20,8 @@ public class UserRegistrationTest extends TestBase
 		
 		//this will going to fill the data of the user
 		Registerobject= new UserRegisterationPage(driver);
-		Registerobject.UserInfoRegisteration("Khaled", "Monir", "k@test333.com", "khaledmn344", "12345678");
-		Assert.assertTrue(Registerobject.sucessmsg.getText().contains("Your registration completed"));
+		Registerobject.userregisteration_data("Khaled", "Monir", "k@test334313.com", "12345678", "12345678");
+		
 		
 	}
 	

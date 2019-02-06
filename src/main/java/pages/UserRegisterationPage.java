@@ -11,57 +11,47 @@ public class UserRegisterationPage extends PageBase {
 		
 	}
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtFirstName")
-	WebElement FirstnametextBox;
+	@FindBy(id="gender-male")
+	WebElement Gendermale_Radiobtn;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtLastName")
-	WebElement LastNametextbox;
+	@FindBy(id="FirstName")
+	WebElement Firstname_Field;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_Email")
-	WebElement Emailtxtbox;
+	@FindBy(id="LastName")
+	WebElement Lastname_Field;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_UserName")
-	WebElement UserNametxtbox;
+	@FindBy(id="Email")
+	WebElement Email_field;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_Password")
-	WebElement Passwordtxtbox;
+	@FindBy(id="Password")
+	WebElement password_field;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_ConfirmPassword")
-	WebElement ConfirmPasswordtxtbox;
+	@FindBy(id="ConfirmPassword")
+	WebElement Confirmpass_field;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm___CustomNav0_StepNextButton")
-	WebElement ClickRegisterButton;
+	@FindBy(id="register-button")
+	WebElement registerbtn;
 	
-	@FindBy(id="ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CompleteStepContainer_lblCompleteStep")
-	public WebElement sucessmsg;
 	
-	public void UserInfoRegisteration(String FirstName, String LastName, String Email, String UserName, String Password)
+	public void userregisteration_data(String Firstname,String Lastname,String Email, String password, String confirmpass)
 	{
-		FirstnametextBox.clear();
-		//FirstnametextBox.sendKeys(FirstName);
-		setText(FirstnametextBox, FirstName);
+		//Gendermale_Radiobtn.click();
 		
-		LastNametextbox.clear();
-		//LastNametextbox.sendKeys(LastName);
-		setText(LastNametextbox, LastName);
+		click_button(Gendermale_Radiobtn);
 		
-		Emailtxtbox.clear();
-		//Emailtxtbox.sendKeys(Email);
-		setText(Emailtxtbox, Email);
+		//Firstname_Field.sendKeys(Firstname);
 		
-		UserNametxtbox.clear();
-		//UserNametxtbox.sendKeys(UserName);
-		setText(UserNametxtbox, UserName);
+		Enter_Text(Firstname_Field, Firstname);
+		Lastname_Field.sendKeys(Lastname);
+		Email_field.sendKeys(Email);
+		password_field.sendKeys(password);
+		Confirmpass_field.sendKeys(confirmpass);
 		
-		Passwordtxtbox.clear();
-		//Passwordtxtbox.sendKeys(Password);
-		setText(Passwordtxtbox, Password);
 		
-		ConfirmPasswordtxtbox.clear();
-		//ConfirmPasswordtxtbox.sendKeys(Password);
-		setText(ConfirmPasswordtxtbox, Password);
+		// Click on the register button to complete registration
+		click_button(registerbtn);
 		
-		clickButton(ClickRegisterButton); 
+		
 	}
 	
 	

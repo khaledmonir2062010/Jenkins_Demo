@@ -1,6 +1,5 @@
 package tests;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -15,8 +14,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
-import okio.Options;
 
 
 public class TestBase {
@@ -91,7 +88,7 @@ public class TestBase {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.navigate().to("https://www.nopcommerce.com/");	
+		driver.navigate().to("https://demo.nopcommerce.com");	
 	}
 
 	@AfterSuite
