@@ -20,7 +20,7 @@ public class UserRegistrationTest extends TestBase
 		
 		//this will going to fill the data of the user
 		Registerobject= new UserRegisterationPage(driver);
-		Registerobject.userregisteration_data("Khaled", "Monir", "k@test334313.com", "12345678", "12345678");
+		Registerobject.userregisteration_data("Ahmed", "Mohamed", "k@test33433313.com", "12345678", "12345678");
 		
 		
 	}
