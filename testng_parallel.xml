@@ -3,19 +3,22 @@
 
 	<test name="chrome Regression test">
 
-		<parameter name="browser" value="chrome"/>
-		<classes>
+		<parameter name="browser" value="chrome" />
+				<classes>
 			<class name="tests.UserRegistrationTest_parallel" />
 		</classes>
 	</test>
-	
-	
-	
+
+
+
 	<test name="fire fox Regression test">
 
-		<parameter name="browser" value="firefox"/>
-		<classes>
+		<parameter name="browser" value="firefox" />
+				<classes>
 			<class name="tests.UserRegistrationTest_parallel" />
 		</classes>
 	</test>
+
+
+	
 </suite>
